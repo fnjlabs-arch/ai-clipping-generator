@@ -1,4 +1,4 @@
-# 🚀 AICLIPS Studio — Viral Content Extraction Engine
+# 🚀 SadSha Clips Studio — Viral Content Extraction Engine
 
 > **A beautifully designed, fully-integrated AI clipping studio.** Built with Next.js, this platform serves as a complete SaaS boilerplate for downloading YouTube videos and automatically extracting viral highlights for TikTok, Reels, and Shorts.
 
@@ -22,13 +22,13 @@ https://github.com/user-attachments/assets/018738b8-af50-4a08-a7ac-1090b5b1f903
 
 ## 🌐 Live Manifestation
 
-**[Experience the full glassmorphic, responsive interface here](https://ai-clipping-generator.vercel.app/)**. Sign in with Google to explore the Video Studio, My Clips archive, and Credits dashboard directly from your browser.
+**[Experience the full glassmorphic, responsive interface here](https://github.com/fnjlabs-arch/ai-clipping-generator)**. Sign in with Google to explore the Video Studio, My Clips archive, and Credits dashboard directly from your browser.
 
 ---
 
-**AICLIPS Studio** is a production-ready, highly-optimized AI web application. Out of the box, it seamlessly manages YouTube video extraction, asynchronous AI highlight detection, User Authentication, Credits & Billing, and Media Persistence using a sleek Next.js (App Router) architecture.
+**SadSha Clips Studio** is a production-ready, highly-optimized AI web application. Out of the box, it seamlessly manages YouTube video extraction, asynchronous AI highlight detection, User Authentication, Credits & Billing, and Media Persistence using a sleek Next.js (App Router) architecture.
 
-**Why use AICLIPS Studio?**
+**Why use SadSha Clips Studio?**
 
 - **Production-Ready SaaS** — Complete with Google OAuth and Stripe Checkout workflows built-in.
 - **Viral Clipping Studio** — Tailored UI for extracting viral highlights with custom Aspect Ratio tuning (9:16, 1:1, etc.).
@@ -37,7 +37,7 @@ https://github.com/user-attachments/assets/018738b8-af50-4a08-a7ac-1090b5b1f903
 - **Premium Glassmorphic UX** — Dynamic multi-theme support (Indigo, Emerald, Rose, Amber) with high-fidelity micro-animations.
 - **Event-Driven Architecture** — Robust webhook-based status updates for reliable long-running AI tasks.
 
-![AICLIPS Studio](https://cdn.muapi.ai/data/2/883345778103/cca8b5bb-25f1-40fe-928e-53dce2c8c928.png)
+![SadSha Clips Studio](https://cdn.muapi.ai/data/2/883345778103/cca8b5bb-25f1-40fe-928e-53dce2c8c928.png)
 
 ## ✨ Core Features
 
@@ -51,7 +51,7 @@ https://github.com/user-attachments/assets/018738b8-af50-4a08-a7ac-1090b5b1f903
 
 ## ⚡ Deployment: Vercel & Production
 
-Deploying an instance of AICLIPS Studio requires minimal configuration. The architecture is engineered explicitly for **Vercel** serverless environments.
+Deploying an instance of SadSha Clips Studio requires minimal configuration. The architecture is engineered explicitly for **Vercel** serverless environments.
 
 ### 🔑 Required Environment Variables
 
@@ -68,7 +68,7 @@ To successfully deploy and run, you must populate the following environment vari
 | **Stripe Billing**    | `STRIPE_SECRET_KEY`                  | Get from [Stripe Dashboard](https://dashboard.stripe.com/apikeys)                            |
 |                       | `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY` | Get from [Stripe Dashboard](https://dashboard.stripe.com/apikeys)                            |
 |                       | `STRIPE_WEBHOOK_SECRET`              | Webhook secret for resolving credit purchases                                                |
-| **AI Generator**      | `AICLIPS_API_KEY`                    | Your MuAPI Key for YouTube downloads and AI clipping services.                                |
+| **AI Generator**      | `SADSHA_CLIPS_API_KEY`                    | Your MuAPI Key for YouTube downloads and AI clipping services.                                |
 |                       | `WEBHOOK_URL`                        | The endpoint where MuAPI will send status updates (e.g., `https://your-app.com/api/webhook/muapi`) |
 
 ---
@@ -88,8 +88,8 @@ Before deploying this update, run `npx prisma db push` to add the nullable `Crea
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/SamurAIGPT/ai-clipping-generator
-cd aiclips-generator
+git clone https://github.com/fnjlabs-arch/ai-clipping-generator
+cd sadsha-clips-studio
 
 # 2. Install dependencies
 npm install
@@ -110,4 +110,4 @@ The graphical console should now be heavily responsive on `http://localhost:3000
 
 ---
 
-_AICLIPS Studio: A modular, mobile-ready, production-grade AI clipping workspace built for content creators._
+_SadSha Clips Studio: A modular, mobile-ready, production-grade AI clipping workspace built for content creators._

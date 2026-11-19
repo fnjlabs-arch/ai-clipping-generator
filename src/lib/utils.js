@@ -2,7 +2,7 @@
  * Utility to download a remote image using fetch.
  * This converts the image to a blob and triggers a browser download.
  */
-export async function downloadMedia(url, filename = "aiclips-download.mp4") {
+export async function downloadMedia(url, filename = "sadsha-clips-download.mp4") {
   try {
     const response = await fetch(url);
     if (!response.ok) throw new Error("Failed to fetch image");

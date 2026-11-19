@@ -15,7 +15,7 @@ const outfit = Outfit({
 });
 
 export const metadata = {
-  title: "AICLIP Studio - AI YouTube Downloader & Highlight Clipper",
+  title: "SadSha Clips Studio - AI YouTube Downloader & Highlight Clipper",
   description: "Download YouTube videos and extract viral AI highlights instantly.",
 };
 

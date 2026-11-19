@@ -1,5 +1,5 @@
 {
-  "name": "aiclips-generator",
+  "name": "sadsha-clips-studio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,28 +11,28 @@
   },
   "dependencies": {
     "@next-auth/prisma-adapter": "^1.0.7",
-    "@prisma/adapter-pg": "^7.7.0",
-    "@prisma/client": "^7.7.0",
-    "@stripe/stripe-js": "^9.2.0",
+    "@prisma/adapter-pg": "^7.10.1",
+    "@prisma/client": "^7.10.1",
+    "@stripe/stripe-js": "^9.17.0",
+    "axios": "^1.21.1",
     "clsx": "^2.1.1",
-    "framer-motion": "^12.38.0",
+    "framer-motion": "^12.43.0",
     "next": "16.2.3",
-    "next-auth": "^4.24.13",
-    "pg": "^8.20.0",
+    "next-auth": "^4.24.15",
+    "pg": "^8.23.1",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-icons": "^5.6.0",
-    "stripe": "^22.0.1",
-    "tailwind-merge": "^3.5.0",
-    "axios": "^1.16.1",
-    "react-hot-toast": "^2.5.2"
+    "react-hot-toast": "^2.6.1",
+    "react-icons": "^5.7.0",
+    "stripe": "^22.6.2",
+    "tailwind-merge": "^3.7.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/pg": "^8.20.0",
-    "eslint": "^9",
+    "@tailwindcss/postcss": "^4.3.5",
+    "@types/pg": "^8.23.1",
+    "eslint": "^9.39.5",
     "eslint-config-next": "16.2.3",
-    "prisma": "^7.7.0",
+    "prisma": "^7.10.1",
     "tailwindcss": "^4"
   }
 }

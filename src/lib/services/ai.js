@@ -4,7 +4,7 @@ import config from "@/lib/config";
 import { buildMuapiWebhookUrl, createMuapiWebhookToken, hashMuapiWebhookToken } from "./muapi-webhook";
 
 /**
- * Service to manage AICLIP generations using muapi.ai
+ * Service to manage SadSha Clips generations using muapi.ai
  */
 export const AIService = {
   /**
@@ -56,7 +56,7 @@ export const AIService = {
       await UserService.deductCredits(userId, cost);
     }
 
-    const apiKey = isUsingCustomKey ? customApiKey.trim() : (config.ai.aiclips.apiKey || config.ai.apiKey);
+    const apiKey = isUsingCustomKey ? customApiKey.trim() : (config.ai.sadshaClips.apiKey || config.ai.apiKey);
     if (!apiKey) throw new Error("API Key is not configured");
 
     const creationModel = prisma.creation || prisma.Creation;
@@ -73,7 +73,7 @@ export const AIService = {
     });
 
     const webhookUrl = buildMuapiWebhookUrl(config.auth.webhook_url, webhookToken);
-    const submitUrl = `${config.ai.aiclips.youtubeEndpoint}?webhook=${encodeURIComponent(webhookUrl)}`;
+    const submitUrl = `${config.ai.sadshaClips.youtubeEndpoint}?webhook=${encodeURIComponent(webhookUrl)}`;
     
     const submitRes = await fetch(submitUrl, {
       method: "POST",
@@ -133,7 +133,7 @@ export const AIService = {
       await UserService.deductCredits(userId, cost);
     }
 
-    const apiKey = isUsingCustomKey ? customApiKey.trim() : (config.ai.aiclips.apiKey || config.ai.apiKey);
+    const apiKey = isUsingCustomKey ? customApiKey.trim() : (config.ai.sadshaClips.apiKey || config.ai.apiKey);
     if (!apiKey) throw new Error("API Key is not configured");
 
     const creationModel = prisma.creation || prisma.Creation;
@@ -151,7 +151,7 @@ export const AIService = {
     });
 
     const webhookUrl = buildMuapiWebhookUrl(config.auth.webhook_url, webhookToken);
-    const submitUrl = `${config.ai.aiclips.clippingEndpoint}?webhook=${encodeURIComponent(webhookUrl)}`;
+    const submitUrl = `${config.ai.sadshaClips.clippingEndpoint}?webhook=${encodeURIComponent(webhookUrl)}`;
     
     const submitRes = await fetch(submitUrl, {
       method: "POST",
@@ -224,7 +224,7 @@ export const AIService = {
 
     // Fallback: Check MuAPI directly if still processing (helps when webhooks fail on localhost)
     try {
-      const apiKey = (customApiKey && customApiKey.trim().length > 0) ? customApiKey.trim() : (config.ai.aiclips.apiKey || config.ai.apiKey);
+      const apiKey = (customApiKey && customApiKey.trim().length > 0) ? customApiKey.trim() : (config.ai.sadshaClips.apiKey || config.ai.apiKey);
       const pollUrl = `https://api.muapi.ai/api/v1/predictions/${requestId}/result`;
       
       const res = await fetch(pollUrl, {

@@ -249,7 +249,7 @@ export default function Home() {
         {/* Header Title */}
         <div className="space-y-2">
           <h1 className="text-3xl font-semibold tracking-tight text-foreground">
-            AICLIP Studio
+            SadSha Clips Studio
           </h1>
           <p className="text-sm text-muted">
             Download YouTube videos and extract viral highlights.

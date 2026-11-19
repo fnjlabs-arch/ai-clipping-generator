@@ -4,7 +4,7 @@
  */
 
 const config = {
-  appName: "Aiclips Generator",
+  appName: "SadSha Clips Studio",
   auth: {
     google: {
       clientId: process.env.GOOGLE_CLIENT_ID,
@@ -27,8 +27,8 @@ const config = {
     }
   },
   ai: {
-    aiclips: {
-      apiKey: process.env.AICLIPS_API_KEY,
+    sadshaClips: {
+      apiKey: process.env.SADSHA_CLIPS_API_KEY,
       youtubeEndpoint: "https://api.muapi.ai/api/v1/youtube-download",
       clippingEndpoint: "https://api.muapi.ai/api/v1/ai-clipping",
     }
